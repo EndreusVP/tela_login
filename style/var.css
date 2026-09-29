@@ -1,0 +1,9 @@
+:root{
+    /*cor*/
+    --cor-principal: #508247;
+    /*sombra*/
+    --sombra: 10px 7px 15px rgba(0, 0, 0, 0.437);
+    /*font*/
+    --font-principal:  'Roboto', sans-serif;
+    --font-tamanho: 20px;
+}
