@@ -1,0 +1,143 @@
+@import url("var.css");
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62%;
+    width: 50%;
+    box-shadow: var(--sombra);
+}
+
+.box1{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+}
+
+.box1::before{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #0000007e;
+    position:absolute;
+    inset: 0;
+    content: "";
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.box1 h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: var(--font-tamanho);
+    font-family: var(--font-principal);
+}
+
+.box1 h2{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: var(--font-tamanho);
+    font-family: var(--font-principal);
+}
+
+.box1 button{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--cor-principal);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--cor-principal);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+input {
+    font-size: var(--font-tamanho);
+    font-family: var(--font-principal);
+    border-bottom: solid 1px #000 !important;
+    border: none;
+    background-color: #0000002f
+}
+
+input:focus {
+    outline: none
+}
+
+input::placeholder {
+    color: #000;
+}
+
+button {
+    font-size: var(--font-tamanho);
+    font-family: var(--font-principal);
+    background-color: #00000000;
+    border: solid 1px #fff;
+    padding: 10px;
+    border-radius: 30px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: 0;
+}
+
+button:hover::before {
+    transform: translateX(0);
+    background-color: #ffffff34;
+}
+
+button:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+button span {
+    z-index: 1;
+    position: relative;
+}
